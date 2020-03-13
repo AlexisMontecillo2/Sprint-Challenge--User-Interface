@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    width: 1000px;
+    margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -66,6 +68,48 @@ p {
     line-height: 1.4;
 }
 
+
+/*We start working on the header for both index and about page*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.narBar {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    margin: 5vh;
+}
+
+.narBar nav{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.narBar nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.narBar img {
+    display: block;
+    width: 20%;
+}
+
+.headImage img{
+    display: block;
+    width: 100%;
+}
+
+/*Finished header
+This is where we color the boxes*/
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -95,6 +139,7 @@ p {
     margin-bottom: 0;
 }
 
+/*The box colors goes here.*/ 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -104,13 +149,56 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .bTeal {
+    background-color: teal;
+}
+
+.middle-content .boxes .bGold{
+    background-color: gold;
+}
+
+.middle-content .boxes .bCadetblue{
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .bCoral{
+    background-color: coral;
+}
+
+.middle-content .boxes .bCrimson{
+    background-color: crimson;
+}
+
+.middle-content .boxes .bForestgreen{
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .bDarkorchid{
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .bHotpink{
+    background-color: hotpink;
+}
+
+.middle-content .boxes .bIndigo{
+    background-color: indigo;
+}
+
+.middle-content .boxes .bDodgerblue{
+    background-color: dodgerblue;
+}
+
+
+
+/*End of boxes here*/
 
 .bottom-content {
     display: flex;
