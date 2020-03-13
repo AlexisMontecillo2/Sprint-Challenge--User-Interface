@@ -270,7 +270,15 @@ do not modify*/
     display: block;
     padding: 7px 7%;
     border: black solid 2px;
+    transition: all 1s ease-in;
 }
+
+.aboutBox a button:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.24);
+}
+
 
 /*End of section*/
 
